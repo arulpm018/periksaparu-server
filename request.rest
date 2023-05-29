@@ -1,0 +1,47 @@
+PUT http://localhost:5000/report/25
+Content-Type:application/json
+
+
+{
+  "analisisdokter": "M Fikri fdsa",
+  "where": {
+    "id": 25
+  }
+}
+###
+POST http://localhost:5000/users
+Content-Type:application/json
+
+{
+    "name":"M Fikri fdsa",
+    "email": "email@gmail.com",
+    "password":"123456",
+    "confPassword":"123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json 
+
+{
+    "email": "arulpm010@gmail.com",
+    "password":"admin"
+}
+
+###
+GET http://localhost:5000/spesificpatientname
+
+###
+DELETE http://localhost:5000/logout
+
+###
+POST http://localhost:5000/upload
+Content-Type: application/json 
+
+{
+    "name":"sadjfka.png",
+    "userId":6
+}
+###
+GET http://localhost:5000/result
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsIm5hbWUiOiJhcnVsIiwiZW1haWwiOiJhcnVscG0wMTBAZ21haWwuY29tIiwiaWF0IjoxNjgzNzM2NzMwLCJleHAiOjE2ODM3MzY3NDV9.odvCxnUs6sCmVO8fOo02CZbaO7YHznsUmosYFhMBl3Q
